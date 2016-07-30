@@ -1,0 +1,31 @@
+{
+  "source": "src",
+  "destination": "build",
+  "plugins": {
+    "metalsmith-markdown": true,
+    "metalsmith-layouts": {
+      "engine": "handlebars",
+      "directory": "src/layouts",
+      "partials": "src/partials"
+    },
+    "metalsmith-assets": {
+      "source": "src/assets",
+      "destination": "assets"
+    },
+    "metalsmith-browser-sync": {
+      "server": "build",
+      "files": [
+        "src/*.md",
+        "src/**/*.md",
+        "src/**/*.hbs",
+        "src/assets/styles/*.css",
+        "src/assets/scripts/*.js"
+      ]
+    },
+    "metalsmith-publish": {
+      "articles": {
+        "draft": false
+      }
+    }
+  }
+}
