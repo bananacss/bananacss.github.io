@@ -1,0 +1,19 @@
+/* content header */
+
+.header {
+  margin: 70px;
+  text-align: center;
+}
+
+.banana-logo {
+  font-size: 60px;
+  font-family: 'Lobster', cursive;
+  display: block;
+  margin-top: 30px;
+}
+
+.banana-sub-title {
+  font-size: 25px;
+  display: block;
+  margin-bottom: 30px;
+}
